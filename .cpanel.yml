@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-  - export DEPLOYPATH=/home/tenb4948/vintent
-  - /bin/cp -r * $DEPLOYPATH

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+    --btncolor: #7286D3;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.5s;
+}
+  
+a:hover,
+a:active,
+a:focus {
+    color: #000;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: var(--btncolor);
+    color: #fff;
+}
+
+.tes {
+    border: 2px solid black;
+}
+
+/* ===== Navbar ===== */
+
+#nav .logo {
+    color: var(--btncolor);
+    font-weight: 700;
+    font-size: 28px;
+}
+
+#nav .navbar-collapse {
+    margin-left: 100px;
+}
+
+#nav li {
+    margin: 0 25px;
+}
+
+#nav li a {
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+
+/* ===== Hero Section ===== */
+
+
+#hero .hero-section {
+    margin: 25px 0;
+    background-image: url('../img/waves.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#hero .hero-section img {
+    max-width: 478px;
+    height: auto;
+}
+
+#hero .hero-content {
+    max-width: 500px;
+    padding-top: 120px;
+}
+
+#hero .slogan {
+    font-weight: 800;
+    font-size: 48px;
+}
+
+#hero .slogan span {
+    color: var(--btncolor);
+    font-style: italic;
+    font-weight: 700;
+}
+
+#hero .brand {
+    margin: 25px 0;
+    background-color: var(--btncolor);
+}
+
+#hero .brand-content {
+    margin: 0 100px;
+
+}
+
+#hero .brand img {
+    margin: 20px 0;
+}
+
+@media (max-width: 800px) {
+    #hero .hero-image {
+        max-width: 478px;
+        height: auto;
+    }
+}
+
+
+/* ===== New Arrivals ===== */
+
+#new-arrivals {
+    margin: 30px 0;
+}
+
+#new-arrivals h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#new-arrivals p {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+#new-arrivals h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#new-arrivals .price {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#new-arrivals .catalog img {
+    border-radius: 10px;
+}
+
+
+
+/* ===== Footer ===== */
+
+#footer {
+    background-color: var(--btncolor);
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+#footer .content {
+    width: 200px;
+}
+
+#footer .content-abt {
+    padding-left: 130px;
+}
+
+#footer .col {
+    margin-top: 50px;
+}
+
+#footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#footer hr {
+    border: 1px solid #fff;
+    height: 2px;
+    background-color: #fff;
+}
+
+#footer .sosmed {
+    max-width: 70px;
+}
+
+#footer .email-form {
+    padding-right: 50px;
+    padding-left: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+#footer input:focus{
+    outline: none;
+}
+
+#footer .btn-icon{
+    border: none;
+    margin-left: -40px;
+    height: 30px;
+    width: 30px;
+    background-image: url('../img/Send.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--btncolor);
+}
+
+@media (max-width: 1400px) {
+    #footer .email-form{
+        max-width: 180px;
+    }
+
+    #footer .content-abt {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    #footer .email-form{
+        max-width: 150px;
+    }
+
+    #footer .content-abt {
+        padding-left: 0;
+    }
+}
