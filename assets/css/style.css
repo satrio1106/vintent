@@ -11,7 +11,7 @@ body {
 }
 
 
-a {
+body a {
     color: #000;
     text-decoration: none;
     transition: 0.5s;
@@ -26,8 +26,8 @@ a:focus {
 }
 
 .btn {
-    background-color: var(--btncolor);
-    color: #fff;
+    background-color: var(--btncolor) !important;
+    color: #fff !important;
 }
 
 .btn:hover {
@@ -94,20 +94,6 @@ a:focus {
     font-weight: 700;
 }
 
-#hero .brand {
-    margin: 25px 0;
-    background-color: var(--btncolor);
-}
-
-#hero .brand-content {
-    margin: 0 100px;
-
-}
-
-#hero .brand img {
-    margin: 20px 0;
-}
-
 @media (max-width: 800px) {
     #hero .hero-image {
         max-width: 478px;
@@ -115,11 +101,30 @@ a:focus {
     }
 }
 
+#brands .brand {
+    margin: 25px 0;
+    padding: 30px 0;
+    background-color: var(--btncolor);
+}
+
+#brands .brand-content {
+    margin: 0 100px;
+
+}
+
+#brands .brand img {
+    margin: 20px 0;
+}
+
 
 /* ===== New Arrivals ===== */
 
 #new-arrivals {
-    margin: 80px 0;
+    margin: 60px 0;
+}
+
+#new-arrivals .catalog .content {
+    margin: 15px 0;
 }
 
 #new-arrivals h2 {
@@ -139,6 +144,38 @@ a:focus {
 }
 
 #new-arrivals .price {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* ===== New Arrivals ===== */
+
+#popular {
+    margin: 80px 0;
+}
+
+#popular .catalog .content {
+    margin: 15px 0;
+}
+
+#popular h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#popular p {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+#popular h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#popular .price {
     font-size: 18px;
     font-weight: 500;
 }
@@ -174,7 +211,7 @@ a:focus {
 /* ===== Testi ===== */
 
 #testi {
-    margin: 30px 0;
+    margin: 60px 0;
     background-color: var(--second);
     padding: 30px 0;
 }
@@ -228,7 +265,7 @@ a:focus {
 /* ===== Footer ===== */
 
 #article {
-    margin: 40px 0;
+    margin: 60px 0;
 }
 
 #article h2 {
