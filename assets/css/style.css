@@ -3,6 +3,7 @@
 
 :root {
     --btncolor: #7286D3;
+    --second: #C7CFED;
 }
 
 body {
@@ -25,6 +26,11 @@ a:focus {
 }
 
 .btn {
+    background-color: var(--btncolor);
+    color: #fff;
+}
+
+.btn:hover {
     background-color: var(--btncolor);
     color: #fff;
 }
@@ -113,10 +119,10 @@ a:focus {
 /* ===== New Arrivals ===== */
 
 #new-arrivals {
-    margin: 30px 0;
+    margin: 80px 0;
 }
 
-#new-arrivals h3 {
+#new-arrivals h2 {
     font-size: 28px;
     font-weight: 700;
 }
@@ -137,11 +143,112 @@ a:focus {
     font-weight: 500;
 }
 
-#new-arrivals .catalog img {
+
+/* ===== Categories ===== */
+
+#categories img {
     border-radius: 10px;
+    margin: 20px 0 10px 10px;
+}
+
+#categories .img-3,
+#categories .img-5 {
+    margin-top: 32px;
+}
+
+#categories h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: -50px;
+    margin-left: 15px;
+}
+
+@media (max-width: 600px) {
+    #categories img {
+        max-width: 350px;
+        height: auto;
+    }
+}
+
+/* ===== Testi ===== */
+
+#testi {
+    margin: 30px 0;
+    background-color: var(--second);
+    padding: 30px 0;
+}
+
+#testi .content {
+    padding-top: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    height: 160px;
+    background: linear-gradient(var(--btncolor) 6%, #fff 6% 80%);
+}
+
+#testi .user .profile {
+    margin-left: -15px;
+}
+
+#testi .user .icon {
+    max-width: 55px;
+    max-height: 30px;
+}
+
+#testi .user h5 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#testi .city {
+    color: #aaa;
+    margin-top: -10px ;
+    font-size: 12px;
+}
+
+#testi .rating {
+    max-width: 150px;
+    max-height: 20px;
+    margin-left: -20px;
+}
+
+#testi .comment {
+    font-size: 15px;
+}
+
+@media (max-width: 400px) {
+    #testi .content {
+        max-width: 300px;
+        margin: 15px  ;
+    }
 }
 
 
+/* ===== Footer ===== */
+
+#article {
+    margin: 40px 0;
+}
+
+#article h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#article h3 {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 15px 0 0 8px;
+    max-width: 300px;
+}
+
+#article .catalog p {
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 8px;
+    color: #232323;
+}
 
 /* ===== Footer ===== */
 
@@ -179,7 +286,7 @@ a:focus {
 }
 
 #footer .email-form {
-    padding-right: 50px;
+    padding-right: 45px;
     padding-left: 10px;
     height: 40px;
     border: none;
@@ -193,7 +300,7 @@ a:focus {
 
 #footer .btn-icon{
     border: none;
-    margin-left: -40px;
+    margin: -3px 0 0 -40px;
     height: 30px;
     width: 30px;
     background-image: url('../img/Send.png');
